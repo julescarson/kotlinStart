@@ -1,31 +1,13 @@
-import java.io.File
-import kotlin.math.abs
-
-
 fun main() {
 
-    val left = mutableListOf<Int>()
-    val right = mutableListOf<Int>()
+    //day 1 part 1
+    println("Day 1 - Part 1: ${day1part1()}")
 
-    File("src/day1part1.txt").forEachLine { line ->
-        val curr = line.split(" ")
-        left.add(curr[0].toInt())
-        right.add(curr[curr.lastIndex].toInt())
-    }
+    //day 1 part 2
+    println("Day 1 - Part 2: ${day1part2()}")
 
-    val leftSorted = left.sorted()
-    val rightSorted = right.sorted()
+    //day 2 part 1
 
-    var sum = 0
 
-    for (i in 0 until right.size) {
-        sum += abs(leftSorted[i] - rightSorted[i])
-    }
-
-    //answer
-    println(sum)
 
 }
-
-
-
