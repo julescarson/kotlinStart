@@ -4,11 +4,11 @@ import kotlin.math.abs
 
 fun main() {
 
-    var left = mutableListOf<Int>()
-    var right = mutableListOf<Int>()
+    val left = mutableListOf<Int>()
+    val right = mutableListOf<Int>()
 
-    val fileContents = File("src/day1part1.txt").forEachLine { line ->
-        var curr = line.split(" ")
+    File("src/day1part1.txt").forEachLine { line ->
+        val curr = line.split(" ")
         left.add(curr[0].toInt())
         right.add(curr[curr.lastIndex].toInt())
     }
