@@ -3,7 +3,7 @@ import kotlin.math.abs
 
 //parts
 fun day1part1() : Int {
-    val input = leftRight("inputText/day1part1.txt")
+    val input = leftRight("inputText/day1.txt")
     val left = input[0].sorted()
     val right = input[1].sorted()
 
@@ -16,7 +16,7 @@ fun day1part1() : Int {
 }
 
 fun day1part2() : Int {
-    val input = leftRight("inputText/day1part1.txt")
+    val input = leftRight("inputText/day1.txt")
     val left = input[0]
     val right = input[1]
     var similarity = 0
@@ -32,10 +32,6 @@ fun day1part2() : Int {
         }
     }
     return similarity
-}
-
-fun day2part1() : Int {
-    return -1
 }
 
 //helpers
