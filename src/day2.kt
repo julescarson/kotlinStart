@@ -51,7 +51,6 @@ fun day2part2() : Int {
 
     // cheese strat: use day 2 part 1, return array of unsafe lines AND safeLevels
     // use unsafe lines array as test in day2, sum with known safeLevels
-    // really not efficient :D
 
     val part1 = day2part1()
     var safeLevels : Int = part1.first
