@@ -9,7 +9,8 @@ fun main() {
     println("Day 2 - Part 2: ${day2part2()}")
 
     //day 3
-    println("Day 3 - Part 1: ${day3part1()}")
+    println("Day 3 - Part 1: ${day3part1("inputText/day3.txt")}")
     println("Day 3 - Part 2: ${day3part2()}")
+
 
 }
