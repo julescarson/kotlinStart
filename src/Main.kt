@@ -12,5 +12,8 @@ fun main() {
     println("Day 3 - Part 1: ${day3part1("inputText/day3.txt")}")
     println("Day 3 - Part 2: ${day3part2()}")
 
+    //day 4
+    println("Day 4 - Part 1: ${day4part1()}")
+    println("Day 4 - Part 2: ${day4part2()}")
 
 }
