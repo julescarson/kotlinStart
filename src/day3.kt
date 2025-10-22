@@ -80,7 +80,7 @@ fun day3part2() : Int {
     // use idxOrder to pass substrings from file to day3part1 summing function w/ regex pattern foreach
     var sum = 0
     for (i in 0 until idxOrder.size-1 step 2) {
-        println("${idxOrder[i]}, ${idxOrder[i+1]}")
+//        println("${idxOrder[i]}, ${idxOrder[i+1]}")
         sum += day3part1(file.substring(idxOrder[i], idxOrder[i+1]))
     }
 
