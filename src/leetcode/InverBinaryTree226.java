@@ -15,6 +15,17 @@ public class InverBinaryTree226 {
       }
   }
     public TreeNode invertTree(TreeNode root) {
+
+
+          /* == Recursive Version
+            if (root == null) return root;
+            TreeNode temp = root.left;
+            root.left = root.right;
+            root.right = temp;
+            invertTree(root.left);
+            invertTree(root.right);
+            return root;
+           */
         if (root == null) return null;
         LinkedList<TreeNode> treeNodes = new LinkedList<TreeNode>();
         treeNodes.add(root);
